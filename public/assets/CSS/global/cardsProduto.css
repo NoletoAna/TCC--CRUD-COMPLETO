@@ -1,0 +1,102 @@
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cardProduto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(25% - 20px);
+    /* Ocupa 25% da largura do contêiner menos o espaço do gap */
+    max-width: 280px;
+    display: flex;
+    flex-direction: column; /* Garante que os elementos dentro estejam empilhados */
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.cardProduto:hover {
+    transform: scale(1.05);
+}
+
+.cardImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: space-between; /* Espaço entre o conteúdo e a parte inferior */
+    flex-grow: 1; /* Faz esta seção ocupar o espaço restante do contêiner */
+}
+
+.nomeProduto {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.precoProduto {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.descricaoProduto {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 8px 0 16px;
+}
+
+.cardBotoes {
+    margin-top: auto; /* Move os botões para o final */
+    display: flex;
+    gap: 8px; /* Espaçamento entre os botões */
+}
+
+.botaoCard {
+    padding: 7px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botaoCard a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-VerMais {
+    background-color: #003366;
+}
+
+.btn-AdicionarCarrinho {
+    background-color: #fbbc05;
+}
+
+.botaoCard:hover {
+    opacity: 0.8;
+}
+
+.textoCinza--tachado{
+    color: #a6a6a6;
+    text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 100%;
+        margin: 20px;
+    }
+}

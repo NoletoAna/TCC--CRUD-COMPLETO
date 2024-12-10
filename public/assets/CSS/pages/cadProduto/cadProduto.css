@@ -1,0 +1,46 @@
+body {
+    font-family: Cambria;
+    background: #f4f4f4;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.botaoCadastrar{
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    background: linear-gradient(90deg, rgba(252, 174, 24, 1) 0%, rgb(255, 193, 8) 100%);
+    padding: 5px;
+}
+
+.botaoVoltar{
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    background: rgb(11,55,102);
+    padding: 5px;
+}
+
+.headAdm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lalala{
+    width: 50%;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    background: white;
+}
+

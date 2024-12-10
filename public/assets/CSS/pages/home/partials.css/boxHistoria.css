@@ -1,0 +1,86 @@
+.boxHistoria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-image: url('background-pattern.png');
+    background-size: cover;
+    background-color: rgb(11, 55, 102);
+    width: 90%;
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+}
+
+.boxHistoria__textArea {
+    color: white;
+    max-width: 750px;
+    margin-bottom: 20px; /* Adicionado para espaçamento em telas menores */
+    text-align: center; /* Centraliza o texto em telas pequenas */
+}
+
+.boxHistoria__textArea h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.boxHistoria__textArea p {
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.boxHistoria__imageArea {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas pequenas */
+    justify-content: center;
+}
+
+.boxHistoria__imageBox {
+    width: 100%;
+    max-width: 400px; /* Limita o tamanho máximo da imagem */
+    height: auto;
+    background-color: white;
+    object-fit: cover;
+    margin-bottom: 10px; /* Adicionado para separar as imagens em telas pequenas */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .boxHistoria {
+        flex-direction: column; /* Alinha o conteúdo em coluna em telas menores */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .boxHistoria__textArea {
+        max-width: 100%;
+    }
+
+    .boxHistoria__imageArea {
+        justify-content: center;
+    }
+
+    .boxHistoria__textArea h2 {
+        font-size: 28px;
+    }
+
+    .boxHistoria__textArea p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxHistoria__textArea h2 {
+        font-size: 24px;
+    }
+
+    .boxHistoria__textArea p {
+        font-size: 14px;
+    }
+
+    .boxHistoria__imageBox {
+        max-width: 100%; /* As imagens ocupam a largura total */
+    }
+}

@@ -1,0 +1,37 @@
+/* TELA DE LOGIN */
+#login h5{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login__texto{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.backgroundLogin{
+    background: rgb(11, 55, 102);
+}
+
+.login__botao{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+#login__google{
+    border: solid 2px gray;
+    padding: 8px;
+    width: 400px;
+}
+
+#login__titulo{
+    margin-bottom: 10px;
+}
+
+#login__conteudo{
+    flex-wrap: wrap;
+}
